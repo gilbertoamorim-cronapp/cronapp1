@@ -1,0 +1,1146 @@
+{
+  "cells": [
+    {
+      "allowConfiguration": false,
+      "angle": 0,
+      "apiPath": "${webRoot}/raml/${packageRoot?replace(\".\", \"/\")}/api.raml",
+      "async": {
+        "batchSize": 500
+      },
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-attrs-text": {
+          "fill": "#666",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-attrs-value": {
+          "fill": "#0066FF",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 12,
+          "font-weight": "bold"
+        }
+      },
+      "chkApi": false,
+      "dataSource": "jdbc/postgres",
+      "disableCache": false,
+      "generationType": "none",
+      "id": "paperCell",
+      "methods": [],
+      "namespace": "teste",
+      "position": {
+        "x": 0,
+        "y": 70
+      },
+      "queries": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Paper",
+      "size": {
+        "height": 0,
+        "width": 0
+      },
+      "sqlDebugging": false,
+      "type": "basic.Rect",
+      "visionLikePackage": false,
+      "z": 1
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "actorId:java.lang.Integer",
+        "firstName:java.lang.String",
+        "lastName:java.lang.String",
+        "lastUpdate:java.sql.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* actorId\nfirstName\nlastName\nlastUpdate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nTexto\nTexto\nData e Hora\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Actor"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "actor_id",
+        "first_name",
+        "last_name",
+        "last_update"
+      ],
+      "dbLengths": [
+        "",
+        45,
+        45,
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        6
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "actorId",
+          "type": "java.lang.Integer",
+          "dbName": "actor_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Actor Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "firstName",
+          "type": "java.lang.String",
+          "dbName": "first_name",
+          "dbLength": 45,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "First Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastName",
+          "type": "java.lang.String",
+          "dbName": "last_name",
+          "dbLength": 45,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Last Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "1377b27c-3fe2-454e-8ee4-c299cc79d525",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Actor Id",
+        "First Name",
+        "Last Name",
+        "Last Update"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Actor",
+      "nullables": [
+        "actorId",
+        "firstName",
+        "lastName",
+        "lastUpdate"
+      ],
+      "position": {
+        "x": 50,
+        "y": 0
+      },
+      "primaryKeys": [
+        "actorId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 216
+      },
+      "tableName": "actor",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "addressId:java.lang.Integer",
+        "address:java.lang.String",
+        "address2:java.lang.String",
+        "city:City",
+        "district:java.lang.String",
+        "lastUpdate:java.sql.Date",
+        "phone:java.lang.String",
+        "postalCode:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 180,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* addressId\naddress\naddress2\ncity\ndistrict\nlastUpdate\nphone\npostalCode\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nTexto\nTexto\nCity\nTexto\nData e Hora\nTexto\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,220)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Address"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "address_id",
+        "address",
+        "address2",
+        "city_id",
+        "district",
+        "last_update",
+        "phone",
+        "postal_code"
+      ],
+      "dbLengths": [
+        "",
+        50,
+        50,
+        5,
+        20,
+        "",
+        20,
+        10
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        6,
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "addressId",
+          "type": "java.lang.Integer",
+          "dbName": "address_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Address Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "address",
+          "type": "java.lang.String",
+          "dbName": "address",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Address",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "address2",
+          "type": "java.lang.String",
+          "dbName": "address2",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Address 2",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "city",
+          "type": "City",
+          "dbName": "city_id",
+          "dbLength": 5,
+          "foreignKeyName": "fk_address_city",
+          "joins": "city_id:city_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "City",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "district",
+          "type": "java.lang.String",
+          "dbName": "district",
+          "dbLength": 20,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "District",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "phone",
+          "type": "java.lang.String",
+          "dbName": "phone",
+          "dbLength": 20,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Phone",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "postalCode",
+          "type": "java.lang.String",
+          "dbName": "postal_code",
+          "dbLength": 10,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Postal Code",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "",
+        "fk_address_city",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "48a05c9f-9939-47f1-95ec-d89602b4c656",
+      "insertable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "",
+        "city_id:city_id",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Address Id",
+        "Address",
+        "Address 2",
+        "City",
+        "District",
+        "Last Update",
+        "Phone",
+        "Postal Code"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Address",
+      "nullables": [
+        "addressId",
+        "address",
+        "city",
+        "district",
+        "lastUpdate",
+        "phone"
+      ],
+      "position": {
+        "x": 328,
+        "y": 380
+      },
+      "primaryKeys": [
+        "addressId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 180,
+        "width": 216
+      },
+      "tableName": "address",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "cityId:java.lang.Integer",
+        "city:java.lang.String",
+        "country:Country",
+        "lastUpdate:java.sql.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* cityId\ncity\ncountry\nlastUpdate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nTexto\nCountry\nData e Hora\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "City"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "city_id",
+        "city",
+        "country_id",
+        "last_update"
+      ],
+      "dbLengths": [
+        "",
+        50,
+        5,
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        6
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "cityId",
+          "type": "java.lang.Integer",
+          "dbName": "city_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "City Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "city",
+          "type": "java.lang.String",
+          "dbName": "city",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "City",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "country",
+          "type": "Country",
+          "dbName": "country_id",
+          "dbLength": 5,
+          "foreignKeyName": "fk_city",
+          "joins": "country_id:country_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Country",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "fk_city",
+        ""
+      ],
+      "id": "3208489d-574f-4267-b852-08761935bf87",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "country_id:country_id",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "City Id",
+        "City",
+        "Country",
+        "Last Update"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "City",
+      "nullables": [
+        "cityId",
+        "city",
+        "country",
+        "lastUpdate"
+      ],
+      "position": {
+        "x": 332.5,
+        "y": 190
+      },
+      "primaryKeys": [
+        "cityId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 216
+      },
+      "tableName": "city",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "countryId:java.lang.Integer",
+        "country:java.lang.String",
+        "lastUpdate:java.sql.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 80,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* countryId\ncountry\nlastUpdate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nTexto\nData e Hora\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Country"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "country_id",
+        "country",
+        "last_update"
+      ],
+      "dbLengths": [
+        "",
+        50,
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        6
+      ],
+      "dbScales": [
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "countryId",
+          "type": "java.lang.Integer",
+          "dbName": "country_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Country Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "country",
+          "type": "java.lang.String",
+          "dbName": "country",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Country",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        ""
+      ],
+      "id": "3ff95a22-b077-4da4-88c9-783e2f4784d2",
+      "insertable": [
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Country Id",
+        "Country",
+        "Last Update"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Country",
+      "nullables": [
+        "countryId",
+        "country",
+        "lastUpdate"
+      ],
+      "position": {
+        "x": 328,
+        "y": 5
+      },
+      "primaryKeys": [
+        "countryId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 130,
+        "width": 216
+      },
+      "tableName": "country",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "c1763bea-15bf-4a45-b80d-da169dd33908",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "city:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "3208489d-574f-4267-b852-08761935bf87"
+      },
+      "target": {
+        "id": "48a05c9f-9939-47f1-95ec-d89602b4c656"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "e9d72ea2-93fc-444d-bd75-b2434feedf2e",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "country:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "3ff95a22-b077-4da4-88c9-783e2f4784d2"
+      },
+      "target": {
+        "id": "3208489d-574f-4267-b852-08761935bf87"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    }
+  ],
+  "selectedGroup": "",
+  "groups": [
+    {
+      "name": "",
+      "id": "8afff378-71cb-49bf-be7b-6bc89be18d0f",
+      "cells": [
+        "1377b27c-3fe2-454e-8ee4-c299cc79d525",
+        "48a05c9f-9939-47f1-95ec-d89602b4c656",
+        "3ff95a22-b077-4da4-88c9-783e2f4784d2",
+        "3208489d-574f-4267-b852-08761935bf87"
+      ],
+      "groupPositions": []
+    }
+  ]
+}

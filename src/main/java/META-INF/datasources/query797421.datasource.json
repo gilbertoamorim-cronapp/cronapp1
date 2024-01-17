@@ -1,0 +1,1557 @@
+{
+  "customId": "webservice",
+  "queryName": "webservice",
+  "sourceType": "rest",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": null,
+  "entityFullName": null,
+  "endpoint": {
+    "url": "https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente?wsdl\u003d",
+    "GET": {
+      "parameters": {
+        "cep": null
+      },
+      "name": "consultaCEP"
+    },
+    "POST": {},
+    "PUT": {},
+    "DELETE": {},
+    "FILTER": {
+      "parameters": {
+        "cep": null
+      },
+      "name": "consultaCEP"
+    },
+    "COUNT": {
+      "parameters": {
+        "codAdministrativo": null,
+        "numeroServico": null,
+        "cepOrigem": null,
+        "cepDestino": null,
+        "usuario": null,
+        "senha": null
+      },
+      "name": "verificaDisponibilidadeServico"
+    },
+    "metadata": [
+      {
+        "name": "atualizaPagamentoNaEntrega",
+        "inputs": [
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "atualizaRemessaAgrupada",
+        "inputs": [
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "bloquearObjeto",
+        "inputs": [
+          {
+            "name": "numeroEtiqueta",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "idPlp",
+            "type": {
+              "class": "java.lang.Long"
+            }
+          },
+          {
+            "name": "tipoBloqueio",
+            "type": {
+              "class": "br.com.correios.bsb.sigep.master.bean.cliente.TipoBloqueio"
+            }
+          },
+          {
+            "name": "acao",
+            "type": {
+              "class": "br.com.correios.bsb.sigep.master.bean.cliente.Acao"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "buscaCliente",
+        "inputs": [
+          {
+            "name": "idContrato",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "idCartaoPostagem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "br.com.correios.bsb.sigep.master.bean.cliente.ClienteERP"
+          }
+        }
+      },
+      {
+        "name": "buscaContrato",
+        "inputs": [
+          {
+            "name": "numero",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "diretoria",
+            "type": {
+              "class": "long"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "br.com.correios.bsb.sigep.master.bean.cliente.ContratoERP"
+          }
+        }
+      },
+      {
+        "name": "buscaDataAtual",
+        "inputs": [],
+        "return": {
+          "type": {
+            "class": "javax.xml.datatype.XMLGregorianCalendar"
+          }
+        }
+      },
+      {
+        "name": "buscaOpcoes",
+        "inputs": [
+          {
+            "name": "listaObjetos",
+            "type": {
+              "generic": "java.lang.String",
+              "class": "java.util.List"
+            }
+          },
+          {
+            "name": "tipoResultado",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "buscaPagamentoEntrega",
+        "inputs": [
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "contrato",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "dataInicio",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "dataFim",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "etiqueta",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "buscaServicos",
+        "inputs": [
+          {
+            "name": "idContrato",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "idCartaoPostagem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "generic": "br.com.correios.bsb.sigep.master.bean.cliente.ServicoERP",
+            "class": "java.util.List"
+          }
+        }
+      },
+      {
+        "name": "buscaServicosAdicionaisAtivos",
+        "inputs": [
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "generic": "br.com.correios.bsb.sigep.master.bean.cliente.ServicoAdicionalXML",
+            "class": "java.util.List"
+          }
+        }
+      },
+      {
+        "name": "buscaServicosValorDeclarado",
+        "inputs": [
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "generic": "java.lang.String",
+            "class": "java.util.List"
+          }
+        }
+      },
+      {
+        "name": "buscaServicosXServicosAdicionais",
+        "inputs": [
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "generic": "java.lang.String",
+            "class": "java.util.List"
+          }
+        }
+      },
+      {
+        "name": "buscaTarifaVale",
+        "inputs": [
+          {
+            "name": "codAdministrativo",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "codServico",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "cepOrigem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "cepDestino",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "peso",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "codFormato",
+            "type": {
+              "class": "java.lang.Integer"
+            }
+          },
+          {
+            "name": "comprimento",
+            "type": {
+              "class": "java.lang.Double"
+            }
+          },
+          {
+            "name": "altura",
+            "type": {
+              "class": "java.lang.Double"
+            }
+          },
+          {
+            "name": "largura",
+            "type": {
+              "class": "java.lang.Double"
+            }
+          },
+          {
+            "name": "valorDeclarado",
+            "type": {
+              "class": "java.lang.Double"
+            }
+          },
+          {
+            "name": "servicoAdicional",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "br.com.correios.bsb.sigep.master.bean.cliente.ValePostal"
+          }
+        }
+      },
+      {
+        "name": "calculaTarifaServico",
+        "inputs": [
+          {
+            "name": "codAdministrativo",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "codServico",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "cepOrigem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "cepDestino",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "peso",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "codFormato",
+            "type": {
+              "class": "java.lang.Integer"
+            }
+          },
+          {
+            "name": "comprimento",
+            "type": {
+              "class": "java.lang.Double"
+            }
+          },
+          {
+            "name": "altura",
+            "type": {
+              "class": "java.lang.Double"
+            }
+          },
+          {
+            "name": "largura",
+            "type": {
+              "class": "java.lang.Double"
+            }
+          },
+          {
+            "name": "diametro",
+            "type": {
+              "class": "java.lang.Double"
+            }
+          },
+          {
+            "name": "codMaoPropria",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "valorDeclarado",
+            "type": {
+              "class": "java.lang.Double"
+            }
+          },
+          {
+            "name": "codAvisoRecebimento",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "cancelarObjeto",
+        "inputs": [
+          {
+            "name": "idPlp",
+            "type": {
+              "class": "java.lang.Long"
+            }
+          },
+          {
+            "name": "numeroEtiqueta",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.Boolean"
+          }
+        }
+      },
+      {
+        "name": "cancelarPedidoScol",
+        "inputs": [
+          {
+            "name": "codAdministrativo",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "idPostagem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "tipo",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "br.com.correios.bsb.sigep.master.bean.cliente.RetornoCancelamento"
+          }
+        }
+      },
+      {
+        "name": "consultaCEP",
+        "inputs": [
+          {
+            "name": "cep",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "br.com.correios.bsb.sigep.master.bean.cliente.EnderecoERP"
+          }
+        }
+      },
+      {
+        "name": "fechaPlp",
+        "inputs": [
+          {
+            "name": "xml",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "idPlpCliente",
+            "type": {
+              "class": "java.lang.Long"
+            }
+          },
+          {
+            "name": "cartaoPostagem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "faixaEtiquetas",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.Long"
+          }
+        }
+      },
+      {
+        "name": "fechaPlpVariosServicos",
+        "inputs": [
+          {
+            "name": "xml",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "idPlpCliente",
+            "type": {
+              "class": "java.lang.Long"
+            }
+          },
+          {
+            "name": "cartaoPostagem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "listaEtiquetas",
+            "type": {
+              "generic": "java.lang.String",
+              "class": "java.util.List"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.Long"
+          }
+        }
+      },
+      {
+        "name": "geraDigitoVerificadorEtiquetas",
+        "inputs": [
+          {
+            "name": "etiquetas",
+            "type": {
+              "generic": "java.lang.String",
+              "class": "java.util.List"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "generic": "java.lang.Integer",
+            "class": "java.util.List"
+          }
+        }
+      },
+      {
+        "name": "getStatusCartaoPostagem",
+        "inputs": [
+          {
+            "name": "numeroCartaoPostagem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "br.com.correios.bsb.sigep.master.bean.cliente.StatusCartao"
+          }
+        }
+      },
+      {
+        "name": "getStatusPLP",
+        "inputs": [
+          {
+            "name": "arg0",
+            "type": {
+              "generic": "br.com.correios.bsb.sigep.master.bean.cliente.ObjetoPostal",
+              "class": "java.util.List"
+            }
+          },
+          {
+            "name": "arg1",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "br.com.correios.bsb.sigep.master.bean.cliente.StatusPlp"
+          }
+        }
+      },
+      {
+        "name": "integrarUsuarioScol",
+        "inputs": [
+          {
+            "name": "codAdministrativo",
+            "type": {
+              "class": "java.lang.Integer"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.Boolean"
+          }
+        }
+      },
+      {
+        "name": "obterClienteAtualizacao",
+        "inputs": [
+          {
+            "name": "cnpjCliente",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "javax.xml.datatype.XMLGregorianCalendar"
+          }
+        }
+      },
+      {
+        "name": "obterEmbalagemLRS",
+        "inputs": [],
+        "return": {
+          "type": {
+            "generic": "br.com.correios.bsb.sigep.master.bean.cliente.EmbalagemLRSMaster",
+            "class": "java.util.List"
+          }
+        }
+      },
+      {
+        "name": "obterMensagemParametrizada",
+        "inputs": [
+          {
+            "name": "id",
+            "type": {
+              "class": "java.lang.Short"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "br.com.correios.bsb.sigep.master.bean.cliente.MensagemParametrizadaTO"
+          }
+        }
+      },
+      {
+        "name": "pesquisarDimensoesServico",
+        "inputs": [
+          {
+            "name": "codigo",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "embalagem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "br.com.correios.bsb.sigep.master.bean.cliente.DimensaoTO"
+          }
+        }
+      },
+      {
+        "name": "pesquisarEmbalagensPorServico",
+        "inputs": [
+          {
+            "name": "codigo",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "generic": "br.com.correios.bsb.sigep.master.bean.cliente.TipoEmbalagem",
+            "class": "java.util.List"
+          }
+        }
+      },
+      {
+        "name": "pesquisarParametrosPorDescricao",
+        "inputs": [
+          {
+            "name": "prefix",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "br.com.correios.bsb.sigep.master.bean.cliente.DimensaoTO"
+          }
+        }
+      },
+      {
+        "name": "pesquisarServicosAdicionais",
+        "inputs": [
+          {
+            "name": "codigo",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "generic": "br.com.correios.bsb.sigep.master.bean.cliente.ServicoAdicionalTO",
+            "class": "java.util.List"
+          }
+        }
+      },
+      {
+        "name": "solicitaEtiquetas",
+        "inputs": [
+          {
+            "name": "tipoDestinatario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "identificador",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "idServico",
+            "type": {
+              "class": "java.lang.Long"
+            }
+          },
+          {
+            "name": "qtdEtiquetas",
+            "type": {
+              "class": "java.lang.Integer"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "solicitaPLP",
+        "inputs": [
+          {
+            "name": "idPlpMaster",
+            "type": {
+              "class": "java.lang.Long"
+            }
+          },
+          {
+            "name": "numEtiqueta",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "solicitarPostagemScol",
+        "inputs": [
+          {
+            "name": "codAdministrativo",
+            "type": {
+              "class": "java.lang.Integer"
+            }
+          },
+          {
+            "name": "xml",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "solicitaXmlPlp",
+        "inputs": [
+          {
+            "name": "idPlpMaster",
+            "type": {
+              "class": "java.lang.Long"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "validaEtiquetaPLP",
+        "inputs": [
+          {
+            "name": "numeroEtiqueta",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "idPlp",
+            "type": {
+              "class": "java.lang.Long"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "boolean"
+          }
+        }
+      },
+      {
+        "name": "validaPlp",
+        "inputs": [
+          {
+            "name": "cliente",
+            "type": {
+              "class": "long"
+            }
+          },
+          {
+            "name": "numero",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "diretoria",
+            "type": {
+              "class": "long"
+            }
+          },
+          {
+            "name": "cartao",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "unidadePostagem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "servico",
+            "type": {
+              "class": "java.lang.Long"
+            }
+          },
+          {
+            "name": "servicosAdicionais",
+            "type": {
+              "generic": "java.lang.String",
+              "class": "java.util.List"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "boolean"
+          }
+        }
+      },
+      {
+        "name": "validarPostagemReversa",
+        "inputs": [
+          {
+            "name": "codAdministrativo",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "codigoServico",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "cepDestinatario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "idCartaoPostagem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "coleta",
+            "type": {
+              "class": "br.com.correios.bsb.sigep.master.bean.cliente.ColetaReversa"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.Boolean"
+          }
+        }
+      },
+      {
+        "name": "validarPostagemSimultanea",
+        "inputs": [
+          {
+            "name": "codAdministrativo",
+            "type": {
+              "class": "java.lang.Integer"
+            }
+          },
+          {
+            "name": "codigoServico",
+            "type": {
+              "class": "java.lang.Integer"
+            }
+          },
+          {
+            "name": "idCartaoPostagem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "cepDestinatario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "coleta",
+            "type": {
+              "class": "br.com.correios.bsb.sigep.master.bean.cliente.ColetaSimultanea"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.Boolean"
+          }
+        }
+      },
+      {
+        "name": "verificaDisponibilidadeServico",
+        "inputs": [
+          {
+            "name": "codAdministrativo",
+            "type": {
+              "class": "java.lang.Integer"
+            }
+          },
+          {
+            "name": "numeroServico",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "cepOrigem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "cepDestino",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "verificaModalTransporte",
+        "inputs": [
+          {
+            "name": "codigoServico",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "cepOrigem",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "cepDestino",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "usuario",
+            "type": {
+              "class": "java.lang.String"
+            }
+          },
+          {
+            "name": "senha",
+            "type": {
+              "class": "java.lang.String"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "java.lang.String"
+          }
+        }
+      },
+      {
+        "name": "VerificaSeTodosObjetosCancelados",
+        "inputs": [
+          {
+            "name": "arg0",
+            "type": {
+              "generic": "br.com.correios.bsb.sigep.master.bean.cliente.ObjetoPostal",
+              "class": "java.util.List"
+            }
+          }
+        ],
+        "return": {
+          "type": {
+            "class": "boolean"
+          }
+        }
+      }
+    ]
+  },
+  "query": "",
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "bairro": null,
+    "cep": null,
+    "cidade": null,
+    "complemento2": null,
+    "end": null,
+    "uf": null,
+    "unidadesPostagem": null
+  },
+  "defaultValuesProperties": {
+    "bairro": {
+      "key": true,
+      "nullable": true,
+      "type": "String",
+      "updatable": true,
+      "autogenerated": false
+    },
+    "cep": {
+      "key": true,
+      "nullable": true,
+      "type": "String",
+      "updatable": true,
+      "autogenerated": false
+    },
+    "cidade": {
+      "key": true,
+      "nullable": true,
+      "type": "String",
+      "updatable": true,
+      "autogenerated": false
+    },
+    "complemento2": {
+      "key": true,
+      "nullable": true,
+      "type": "String",
+      "updatable": true,
+      "autogenerated": false
+    },
+    "end": {
+      "key": true,
+      "nullable": true,
+      "type": "String",
+      "updatable": true,
+      "autogenerated": false
+    },
+    "uf": {
+      "key": true,
+      "nullable": true,
+      "type": "String",
+      "updatable": true,
+      "autogenerated": false
+    },
+    "unidadesPostagem": {
+      "key": true,
+      "nullable": true,
+      "type": "String",
+      "updatable": true,
+      "autogenerated": false
+    }
+  },
+  "security": {
+    "bairro": null,
+    "cep": null,
+    "cidade": null,
+    "complemento2": null,
+    "end": null,
+    "uf": null,
+    "unidadesPostagem": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {
+    "Accept": "\"text/xml\"",
+    "Content-Type": "\"text/xml\""
+  },
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query797421/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}
