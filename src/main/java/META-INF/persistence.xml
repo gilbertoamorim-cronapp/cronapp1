@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
+        <class>app.entity.AuditLog</class>
+        <class>app.entity.Device</class>
+        <class>app.entity.InvalidatedToken</class>
+        <class>app.entity.RoleSecurable</class>
+        <class>app.entity.Securable</class>
+        <class>app.entity.UserSecurable</class>
+        <class>app.entity.UserRole</class>
+        <class>app.entity.User</class>
+        <class>app.entity.Role</class>
+        <class>app.entity.Login</class>
+        <class>app.entity.View</class>
+        <class>app.entity.Application</class>
+        <class>app.entity.ApplicationUser</class>
+        <class>app.entity.Session</class>
+        <class>app.entity.SessionAttributes</class>
+        <properties>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="postgres" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <non-jta-data-source>java:comp/env/jdbc/CriadoemNext25071</non-jta-data-source>
+        <class>postgres.entity.Film</class>
+        <class>postgres.entity.Filmes</class>
+        <class>postgres.entity.FilmCategory</class>
+        <class>postgres.entity.Language</class>
+        <class>postgres.entity.Address</class>
+        <class>postgres.entity.Actor</class>
+        <class>postgres.entity.FilmesAtores</class>
+        <class>postgres.entity.Inventory</class>
+        <class>postgres.entity.Payment</class>
+        <class>postgres.entity.Rental</class>
+        <class>postgres.entity.Customer</class>
+        <class>postgres.entity.Category</class>
+        <class>postgres.entity.Store</class>
+        <class>postgres.entity.Staff</class>
+        <class>postgres.entity.Country</class>
+        <class>postgres.entity.Atores</class>
+        <class>postgres.entity.City</class>
+        <class>postgres.entity.FilmActor</class>
+        <properties>
+            <property name="eclipselink.ddl-generation" value="none"/>
+            <property name="cronapp.diagram.namespace" value="postgres"/>
+        </properties>
+    </persistence-unit>
+</persistence>

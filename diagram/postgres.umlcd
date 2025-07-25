@@ -1,0 +1,5703 @@
+{
+  "cells": [
+    {
+      "allowConfiguration": false,
+      "angle": 0,
+      "apiPath": "${webRoot}/raml/${packageRoot?replace(\".\", \"/\")}/api.raml",
+      "async": {
+        "batchSize": 500
+      },
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-attrs-text": {
+          "fill": "#666",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-attrs-value": {
+          "fill": "#0066FF",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 12,
+          "font-weight": "bold"
+        }
+      },
+      "chkApi": false,
+      "dataSource": "jdbc/CriadoemNext25071",
+      "disableCache": false,
+      "generationType": "none",
+      "id": "paperCell",
+      "methods": [],
+      "namespace": "postgres",
+      "position": {
+        "x": 518.25,
+        "y": 80
+      },
+      "queries": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Paper",
+      "size": {
+        "height": 0,
+        "width": 0
+      },
+      "sqlDebugging": false,
+      "type": "basic.Rect",
+      "visionLikePackage": false,
+      "z": 1
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "actorId:java.lang.Integer",
+        "firstName:java.lang.String",
+        "lastName:java.lang.String",
+        "lastUpdate:java.sql.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* actorId\nfirstName\nlastName\nlastUpdate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nTexto\nTexto\nData e Hora\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Actor"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "actor_id",
+        "first_name",
+        "last_name",
+        "last_update"
+      ],
+      "dbLengths": [
+        "",
+        45,
+        45,
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        6
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "actorId",
+          "type": "java.lang.Integer",
+          "dbName": "actor_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Actor Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "firstName",
+          "type": "java.lang.String",
+          "dbName": "first_name",
+          "dbLength": 45,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "First Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastName",
+          "type": "java.lang.String",
+          "dbName": "last_name",
+          "dbLength": 45,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Last Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "fe264913-13a1-4361-994e-5ae2f29b0adc",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Actor Id",
+        "First Name",
+        "Last Name",
+        "Last Update"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Actor",
+      "nullables": [
+        "actorId",
+        "firstName",
+        "lastName",
+        "lastUpdate"
+      ],
+      "position": {
+        "x": 290.25,
+        "y": 445
+      },
+      "primaryKeys": [
+        "actorId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 216
+      },
+      "tableName": "actor",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "addressId:java.lang.Integer",
+        "address:java.lang.String",
+        "address2:java.lang.String",
+        "city:City",
+        "district:java.lang.String",
+        "lastUpdate:java.sql.Date",
+        "phone:java.lang.String",
+        "postalCode:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 180,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* addressId\naddress\naddress2\ncity\ndistrict\nlastUpdate\nphone\npostalCode\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nTexto\nTexto\nCity\nTexto\nData e Hora\nTexto\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,220)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Address"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "address_id",
+        "address",
+        "address2",
+        "city_id",
+        "district",
+        "last_update",
+        "phone",
+        "postal_code"
+      ],
+      "dbLengths": [
+        "",
+        50,
+        50,
+        5,
+        20,
+        "",
+        20,
+        10
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        6,
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "addressId",
+          "type": "java.lang.Integer",
+          "dbName": "address_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Address Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "address",
+          "type": "java.lang.String",
+          "dbName": "address",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Address",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "address2",
+          "type": "java.lang.String",
+          "dbName": "address2",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Address 2",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "city",
+          "type": "City",
+          "dbName": "city_id",
+          "dbLength": 5,
+          "foreignKeyName": "fk_address_city",
+          "joins": "city_id:city_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "City",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "district",
+          "type": "java.lang.String",
+          "dbName": "district",
+          "dbLength": 20,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "District",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "phone",
+          "type": "java.lang.String",
+          "dbName": "phone",
+          "dbLength": 20,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Phone",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "postalCode",
+          "type": "java.lang.String",
+          "dbName": "postal_code",
+          "dbLength": 10,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Postal Code",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "",
+        "fk_address_city",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "d7913529-13a1-4a83-9cb8-d4823c5515eb",
+      "insertable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "",
+        "city_id:city_id",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Address Id",
+        "Address",
+        "Address 2",
+        "City",
+        "District",
+        "Last Update",
+        "Phone",
+        "Postal Code"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Address",
+      "nullables": [
+        "addressId",
+        "address",
+        "city",
+        "district",
+        "lastUpdate",
+        "phone"
+      ],
+      "position": {
+        "x": 568.25,
+        "y": 425
+      },
+      "primaryKeys": [
+        "addressId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 180,
+        "width": 216
+      },
+      "tableName": "address",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.Integer",
+        "dataNascimento:java.util.Date",
+        "nacionalidade:java.lang.String",
+        "nome:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* id\ndataNascimento\nnacionalidade\nnome\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 160,
+          "text": "Inteiro\nData\nTexto\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Atores"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "id",
+        "data_nascimento",
+        "nacionalidade",
+        "nome"
+      ],
+      "dbLengths": [
+        "",
+        "",
+        100,
+        255
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.Integer",
+          "dbName": "id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "dataNascimento",
+          "type": "java.util.Date",
+          "dbName": "data_nascimento",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Data Nascimento",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "nacionalidade",
+          "type": "java.lang.String",
+          "dbName": "nacionalidade",
+          "dbLength": 100,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Nacionalidade",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "nome",
+          "type": "java.lang.String",
+          "dbName": "nome",
+          "dbLength": 255,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Nome",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "240e23f9-3756-4fb6-a7b8-ac51af069a1f",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Id",
+        "Data Nascimento",
+        "Nacionalidade",
+        "Nome"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Atores",
+      "nullables": [
+        "id",
+        "nome"
+      ],
+      "position": {
+        "x": 849.25,
+        "y": 10
+      },
+      "primaryKeys": [
+        "id"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 207
+      },
+      "tableName": "atores",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "categoryId:java.lang.Integer",
+        "lastUpdate:java.sql.Date",
+        "name:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 80,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* categoryId\nlastUpdate\nname\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nData e Hora\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Category"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "category_id",
+        "last_update",
+        "name"
+      ],
+      "dbLengths": [
+        "",
+        "",
+        25
+      ],
+      "dbPrecisions": [
+        "",
+        6,
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "categoryId",
+          "type": "java.lang.Integer",
+          "dbName": "category_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Category Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "name",
+          "type": "java.lang.String",
+          "dbName": "name",
+          "dbLength": 25,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        ""
+      ],
+      "id": "60dd60c9-fc73-4c32-b8dc-eacbb0382dad",
+      "insertable": [
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Category Id",
+        "Last Update",
+        "Name"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Category",
+      "nullables": [
+        "categoryId",
+        "lastUpdate",
+        "name"
+      ],
+      "position": {
+        "x": 1162.25,
+        "y": 450
+      },
+      "primaryKeys": [
+        "categoryId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 130,
+        "width": 216
+      },
+      "tableName": "category",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "cityId:java.lang.Integer",
+        "city:java.lang.String",
+        "country:Country",
+        "lastUpdate:java.sql.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* cityId\ncity\ncountry\nlastUpdate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nTexto\nCountry\nData e Hora\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "City"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "city_id",
+        "city",
+        "country_id",
+        "last_update"
+      ],
+      "dbLengths": [
+        "",
+        50,
+        5,
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        6
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "cityId",
+          "type": "java.lang.Integer",
+          "dbName": "city_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "City Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "city",
+          "type": "java.lang.String",
+          "dbName": "city",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "City",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "country",
+          "type": "Country",
+          "dbName": "country_id",
+          "dbLength": 5,
+          "foreignKeyName": "fk_city",
+          "joins": "country_id:country_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Country",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "fk_city",
+        ""
+      ],
+      "id": "e43a2f1d-eced-4052-8fa3-70bea491eaa1",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "country_id:country_id",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "City Id",
+        "City",
+        "Country",
+        "Last Update"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "City",
+      "nullables": [
+        "cityId",
+        "city",
+        "country",
+        "lastUpdate"
+      ],
+      "position": {
+        "x": 572.75,
+        "y": 210
+      },
+      "primaryKeys": [
+        "cityId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 216
+      },
+      "tableName": "city",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "countryId:java.lang.Integer",
+        "country:java.lang.String",
+        "lastUpdate:java.sql.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 80,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* countryId\ncountry\nlastUpdate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nTexto\nData e Hora\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Country"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "country_id",
+        "country",
+        "last_update"
+      ],
+      "dbLengths": [
+        "",
+        50,
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        6
+      ],
+      "dbScales": [
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "countryId",
+          "type": "java.lang.Integer",
+          "dbName": "country_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Country Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "country",
+          "type": "java.lang.String",
+          "dbName": "country",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Country",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        ""
+      ],
+      "id": "d7e92b66-d7ec-4e67-ad37-c92540c051e7",
+      "insertable": [
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Country Id",
+        "Country",
+        "Last Update"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Country",
+      "nullables": [
+        "countryId",
+        "country",
+        "lastUpdate"
+      ],
+      "position": {
+        "x": 568.25,
+        "y": 15
+      },
+      "primaryKeys": [
+        "countryId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 130,
+        "width": 216
+      },
+      "tableName": "country",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "customerId:java.lang.Integer",
+        "active:java.lang.Integer",
+        "activebool:java.lang.Boolean",
+        "address:Address",
+        "createDate:java.util.Date",
+        "email:java.lang.String",
+        "firstName:java.lang.String",
+        "lastName:java.lang.String",
+        "lastUpdate:java.sql.Date",
+        "storeId:java.lang.Short"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 220,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* customerId\nactive\nactivebool\naddress\ncreateDate\nemail\nfirstName\nlastName\nlastUpdate\nstoreId\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 136,
+          "text": "Inteiro\nInteiro\nLógico\nAddress\nData\nTexto\nTexto\nTexto\nData e Hora\nInteiro Curto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,260)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Customer"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "customer_id",
+        "active",
+        "activebool",
+        "address_id",
+        "create_date",
+        "email",
+        "first_name",
+        "last_name",
+        "last_update",
+        "store_id"
+      ],
+      "dbLengths": [
+        "",
+        "",
+        "",
+        5,
+        "",
+        50,
+        45,
+        45,
+        "",
+        5
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        6,
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "customerId",
+          "type": "java.lang.Integer",
+          "dbName": "customer_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Customer Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "active",
+          "type": "java.lang.Integer",
+          "dbName": "active",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Active",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "activebool",
+          "type": "java.lang.Boolean",
+          "dbName": "activebool",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Activebool",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "address",
+          "type": "Address",
+          "dbName": "address_id",
+          "dbLength": 5,
+          "foreignKeyName": "customer_address_id_fkey",
+          "joins": "address_id:address_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Address",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "createDate",
+          "type": "java.util.Date",
+          "dbName": "create_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Create Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "email",
+          "type": "java.lang.String",
+          "dbName": "email",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Email",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "firstName",
+          "type": "java.lang.String",
+          "dbName": "first_name",
+          "dbLength": 45,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "First Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastName",
+          "type": "java.lang.String",
+          "dbName": "last_name",
+          "dbLength": 45,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Last Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "storeId",
+          "type": "java.lang.Short",
+          "dbName": "store_id",
+          "dbLength": 5,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Store Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "",
+        "customer_address_id_fkey",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "76f7b271-6aca-4e54-a5ff-080c54130a50",
+      "insertable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "",
+        "address_id:address_id",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Customer Id",
+        "Active",
+        "Activebool",
+        "Address",
+        "Create Date",
+        "Email",
+        "First Name",
+        "Last Name",
+        "Last Update",
+        "Store Id"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Customer",
+      "nullables": [
+        "customerId",
+        "activebool",
+        "address",
+        "createDate",
+        "firstName",
+        "lastName",
+        "storeId"
+      ],
+      "position": {
+        "x": 0,
+        "y": 685
+      },
+      "primaryKeys": [
+        "customerId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 200,
+        "width": 216
+      },
+      "tableName": "customer",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "filmId:java.lang.Integer",
+        "description:java.lang.String",
+        "fulltext:File Upload (to Database)",
+        "language:Language",
+        "lastUpdate:java.sql.Date",
+        "length:java.lang.Short",
+        "rating:java.lang.String",
+        "releaseYear:File Upload (to Database)",
+        "rentalDuration:java.lang.Short",
+        "rentalRate:java.lang.Double",
+        "replacementCost:java.lang.Double",
+        "specialFeatures:File Upload (to Database)",
+        "title:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 280,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* filmId\ndescription\nfulltext\nlanguage\nlastUpdate\nlength\nrating\nreleaseYear\nrentalDuration\nrentalRate\nreplacementCost\nspecialFeatures\ntitle\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 140,
+          "text": "Inteiro\nTexto\nArquivo no Banco\nLanguage\nData e Hora\nInteiro Curto\nTexto\nArquivo no Banco\nInteiro Curto\nNumérico\nNumérico\nArquivo no Banco\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,320)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Film"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "film_id",
+        "description",
+        "fulltext",
+        "language_id",
+        "last_update",
+        "length",
+        "rating",
+        "release_year",
+        "rental_duration",
+        "rental_rate",
+        "replacement_cost",
+        "special_features",
+        "title"
+      ],
+      "dbLengths": [
+        "",
+        2147483647,
+        2147483647,
+        5,
+        "",
+        "",
+        2147483647,
+        10,
+        5,
+        "",
+        "",
+        2147483647,
+        255
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        "",
+        6,
+        "",
+        "",
+        "",
+        "",
+        2,
+        2,
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "filmId",
+          "type": "java.lang.Integer",
+          "dbName": "film_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Film Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "description",
+          "type": "java.lang.String",
+          "dbName": "description",
+          "dbLength": 2147483647,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Description",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "fulltext",
+          "type": "File Upload (to Database)",
+          "dbName": "fulltext",
+          "dbLength": 2147483647,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Fulltext",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "language",
+          "type": "Language",
+          "dbName": "language_id",
+          "dbLength": 5,
+          "foreignKeyName": "film_language_id_fkey",
+          "joins": "language_id:language_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Language",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "length",
+          "type": "java.lang.Short",
+          "dbName": "length",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Length",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "rating",
+          "type": "java.lang.String",
+          "dbName": "rating",
+          "dbLength": 2147483647,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Rating",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "releaseYear",
+          "type": "File Upload (to Database)",
+          "dbName": "release_year",
+          "dbLength": 10,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Release Year",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "rentalDuration",
+          "type": "java.lang.Short",
+          "dbName": "rental_duration",
+          "dbLength": 5,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Rental Duration",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "rentalRate",
+          "type": "java.lang.Double",
+          "dbName": "rental_rate",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 2,
+          "dbScale": 2,
+          "label": "Rental Rate",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "replacementCost",
+          "type": "java.lang.Double",
+          "dbName": "replacement_cost",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 2,
+          "dbScale": 2,
+          "label": "Replacement Cost",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "specialFeatures",
+          "type": "File Upload (to Database)",
+          "dbName": "special_features",
+          "dbLength": 2147483647,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Special Features",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "title",
+          "type": "java.lang.String",
+          "dbName": "title",
+          "dbLength": 255,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Title",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "",
+        "film_language_id_fkey",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "9abaeeeb-9f25-428e-be35-67a32481875c",
+      "insertable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "",
+        "language_id:language_id",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Film Id",
+        "Description",
+        "Fulltext",
+        "Language",
+        "Last Update",
+        "Length",
+        "Rating",
+        "Release Year",
+        "Rental Duration",
+        "Rental Rate",
+        "Replacement Cost",
+        "Special Features",
+        "Title"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Film",
+      "nullables": [
+        "filmId",
+        "fulltext",
+        "language",
+        "lastUpdate",
+        "rentalDuration",
+        "rentalRate",
+        "replacementCost",
+        "title"
+      ],
+      "position": {
+        "x": 1574,
+        "y": 400
+      },
+      "primaryKeys": [
+        "filmId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 230,
+        "width": 246
+      },
+      "tableName": "film",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "actor:Actor",
+        "film:Film",
+        "lastUpdate:java.sql.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 80,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* actor\n* film\nlastUpdate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Actor\nFilm\nData e Hora\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "FilmActor"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "actor_id",
+        "film_id",
+        "last_update"
+      ],
+      "dbLengths": [
+        5,
+        5,
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        6
+      ],
+      "dbScales": [
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "actor",
+          "type": "Actor",
+          "dbName": "actor_id",
+          "dbLength": 5,
+          "foreignKeyName": "film_actor_actor_id_fkey",
+          "joins": "actor_id:actor_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Actor",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "film",
+          "type": "Film",
+          "dbName": "film_id",
+          "dbLength": 5,
+          "foreignKeyName": "film_actor_film_id_fkey",
+          "joins": "film_id:film_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Film",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "film_actor_actor_id_fkey",
+        "film_actor_film_id_fkey",
+        ""
+      ],
+      "id": "a0c23285-db01-4b23-ba46-13a22994b5bc",
+      "insertable": [
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "actor_id:actor_id",
+        "film_id:film_id",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Actor",
+        "Film",
+        "Last Update"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "FilmActor",
+      "nullables": [
+        "actor",
+        "film",
+        "lastUpdate"
+      ],
+      "position": {
+        "x": 609,
+        "y": 720
+      },
+      "primaryKeys": [
+        "actor",
+        "film"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 130,
+        "width": 216
+      },
+      "tableName": "film_actor",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "category:Category",
+        "film:Film",
+        "lastUpdate:java.sql.Date"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 80,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* category\n* film\nlastUpdate\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Category\nFilm\nData e Hora\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "FilmCategory"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "category_id",
+        "film_id",
+        "last_update"
+      ],
+      "dbLengths": [
+        5,
+        5,
+        ""
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        6
+      ],
+      "dbScales": [
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "category",
+          "type": "Category",
+          "dbName": "category_id",
+          "dbLength": 5,
+          "foreignKeyName": "film_category_category_id_fkey",
+          "joins": "category_id:category_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Category",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "film",
+          "type": "Film",
+          "dbName": "film_id",
+          "dbLength": 5,
+          "foreignKeyName": "film_category_film_id_fkey",
+          "joins": "film_id:film_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Film",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "film_category_category_id_fkey",
+        "film_category_film_id_fkey",
+        ""
+      ],
+      "id": "6ed2439c-5a05-4f11-b9e0-bdab550e3ec2",
+      "insertable": [
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "category_id:category_id",
+        "film_id:film_id",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Category",
+        "Film",
+        "Last Update"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "FilmCategory",
+      "nullables": [
+        "category",
+        "film",
+        "lastUpdate"
+      ],
+      "position": {
+        "x": 1248.25,
+        "y": 720
+      },
+      "primaryKeys": [
+        "category",
+        "film"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 130,
+        "width": 216
+      },
+      "tableName": "film_category",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.Integer",
+        "anoLancamento:java.lang.Integer",
+        "diretor:java.lang.String",
+        "duracao:java.lang.Integer",
+        "genero:java.lang.String",
+        "titulo:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 140,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* id\nanoLancamento\ndiretor\nduracao\ngenero\ntitulo\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 166,
+          "text": "Inteiro\nInteiro\nTexto\nInteiro\nTexto\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,180)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Filmes"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "id",
+        "ano_lancamento",
+        "diretor",
+        "duracao",
+        "genero",
+        "titulo"
+      ],
+      "dbLengths": [
+        "",
+        "",
+        255,
+        "",
+        100,
+        255
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.Integer",
+          "dbName": "id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "anoLancamento",
+          "type": "java.lang.Integer",
+          "dbName": "ano_lancamento",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Ano Lancamento",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "diretor",
+          "type": "java.lang.String",
+          "dbName": "diretor",
+          "dbLength": 255,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Diretor",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "duracao",
+          "type": "java.lang.Integer",
+          "dbName": "duracao",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Duracao",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "genero",
+          "type": "java.lang.String",
+          "dbName": "genero",
+          "dbLength": 100,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Genero",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "titulo",
+          "type": "java.lang.String",
+          "dbName": "titulo",
+          "dbLength": 255,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Titulo",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "6e7dff47-ea91-4a72-ac84-93b383a85447",
+      "insertable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Id",
+        "Ano Lancamento",
+        "Diretor",
+        "Duracao",
+        "Genero",
+        "Titulo"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Filmes",
+      "nullables": [
+        "id",
+        "titulo"
+      ],
+      "position": {
+        "x": 1139.25,
+        "y": 0
+      },
+      "primaryKeys": [
+        "id"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 160,
+        "width": 213
+      },
+      "tableName": "filmes",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "atores:Atores",
+        "filmes:Filmes"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 60,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* atores\n* filmes\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 149,
+          "text": "Atores\nFilmes\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,100)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "FilmesAtores"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "ator_id",
+        "filme_id"
+      ],
+      "dbLengths": [
+        10,
+        10
+      ],
+      "dbPrecisions": [
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "atores",
+          "type": "Atores",
+          "dbName": "ator_id",
+          "dbLength": 10,
+          "foreignKeyName": "filmes_atores_ator_id_fkey",
+          "joins": "ator_id:id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Atores",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "filmes",
+          "type": "Filmes",
+          "dbName": "filme_id",
+          "dbLength": 10,
+          "foreignKeyName": "filmes_atores_filme_id_fkey",
+          "joins": "filme_id:id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Filmes",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        }
+      ],
+      "foreignKeysName": [
+        "filmes_atores_ator_id_fkey",
+        "filmes_atores_filme_id_fkey"
+      ],
+      "id": "df634cad-d8ca-40c8-8527-15b9b8ae17f7",
+      "insertable": [
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "ator_id:id",
+        "filme_id:id"
+      ],
+      "keyTypes": [
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Atores",
+        "Filmes"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "FilmesAtores",
+      "nullables": [
+        "atores",
+        "filmes"
+      ],
+      "position": {
+        "x": 1050,
+        "y": 220
+      },
+      "primaryKeys": [
+        "atores",
+        "filmes"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        ""
+      ],
+      "size": {
+        "height": 120,
+        "width": 195
+      },
+      "tableName": "filmes_atores",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "inventoryId:java.lang.Integer",
+        "film:Film",
+        "lastUpdate:java.sql.Date",
+        "storeId:java.lang.Short"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* inventoryId\nfilm\nlastUpdate\nstoreId\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 136,
+          "text": "Inteiro\nFilm\nData e Hora\nInteiro Curto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Inventory"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "inventory_id",
+        "film_id",
+        "last_update",
+        "store_id"
+      ],
+      "dbLengths": [
+        "",
+        5,
+        "",
+        5
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        6,
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "inventoryId",
+          "type": "java.lang.Integer",
+          "dbName": "inventory_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Inventory Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "film",
+          "type": "Film",
+          "dbName": "film_id",
+          "dbLength": 5,
+          "foreignKeyName": "inventory_film_id_fkey",
+          "joins": "film_id:film_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Film",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "storeId",
+          "type": "java.lang.Short",
+          "dbName": "store_id",
+          "dbLength": 5,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Store Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "inventory_film_id_fkey",
+        "",
+        ""
+      ],
+      "id": "8d94a990-09f9-41dc-82b4-814ce4f44ba1",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "film_id:film_id",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Inventory Id",
+        "Film",
+        "Last Update",
+        "Store Id"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Inventory",
+      "nullables": [
+        "inventoryId",
+        "film",
+        "lastUpdate",
+        "storeId"
+      ],
+      "position": {
+        "x": 1632,
+        "y": 715
+      },
+      "primaryKeys": [
+        "inventoryId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 216
+      },
+      "tableName": "inventory",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "languageId:java.lang.Integer",
+        "lastUpdate:java.sql.Date",
+        "name:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 80,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* languageId\nlastUpdate\nname\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nData e Hora\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Language"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "language_id",
+        "last_update",
+        "name"
+      ],
+      "dbLengths": [
+        "",
+        "",
+        20
+      ],
+      "dbPrecisions": [
+        "",
+        6,
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "languageId",
+          "type": "java.lang.Integer",
+          "dbName": "language_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Language Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "name",
+          "type": "java.lang.String",
+          "dbName": "name",
+          "dbLength": 20,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        ""
+      ],
+      "id": "957cb3f7-03d5-4f66-a5ee-c20cc9896624",
+      "insertable": [
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Language Id",
+        "Last Update",
+        "Name"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Language",
+      "nullables": [
+        "languageId",
+        "lastUpdate",
+        "name"
+      ],
+      "position": {
+        "x": 1593.5,
+        "y": 215
+      },
+      "primaryKeys": [
+        "languageId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 130,
+        "width": 216
+      },
+      "tableName": "language",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "paymentId:java.lang.Integer",
+        "amount:java.lang.Double",
+        "customer:Customer",
+        "paymentDate:java.sql.Date",
+        "rental:Rental",
+        "staff:Staff"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 140,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* paymentId\namount\ncustomer\npaymentDate\nrental\nstaff\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 144,
+          "text": "Inteiro\nNumérico\nCustomer\nData e Hora\nRental\nStaff\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,180)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Payment"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "payment_id",
+        "amount",
+        "customer_id",
+        "payment_date",
+        "rental_id",
+        "staff_id"
+      ],
+      "dbLengths": [
+        "",
+        "",
+        5,
+        "",
+        10,
+        5
+      ],
+      "dbPrecisions": [
+        "",
+        2,
+        "",
+        6,
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "paymentId",
+          "type": "java.lang.Integer",
+          "dbName": "payment_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Payment Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "amount",
+          "type": "java.lang.Double",
+          "dbName": "amount",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 2,
+          "dbScale": 2,
+          "label": "Amount",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "customer",
+          "type": "Customer",
+          "dbName": "customer_id",
+          "dbLength": 5,
+          "foreignKeyName": "payment_customer_id_fkey",
+          "joins": "customer_id:customer_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Customer",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "paymentDate",
+          "type": "java.sql.Date",
+          "dbName": "payment_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Payment Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "rental",
+          "type": "Rental",
+          "dbName": "rental_id",
+          "dbLength": 10,
+          "foreignKeyName": "payment_rental_id_fkey",
+          "joins": "rental_id:rental_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Rental",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "staff",
+          "type": "Staff",
+          "dbName": "staff_id",
+          "dbLength": 5,
+          "foreignKeyName": "payment_staff_id_fkey",
+          "joins": "staff_id:staff_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Staff",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "payment_customer_id_fkey",
+        "",
+        "payment_rental_id_fkey",
+        "payment_staff_id_fkey"
+      ],
+      "id": "edd7f0ae-4c62-476e-a7b8-c4fac2e48d8f",
+      "insertable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "customer_id:customer_id",
+        "",
+        "rental_id:rental_id",
+        "staff_id:staff_id"
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Payment Id",
+        "Amount",
+        "Customer",
+        "Payment Date",
+        "Rental",
+        "Staff"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Payment",
+      "nullables": [
+        "paymentId",
+        "amount",
+        "customer",
+        "paymentDate",
+        "rental",
+        "staff"
+      ],
+      "position": {
+        "x": 349.75,
+        "y": 1160
+      },
+      "primaryKeys": [
+        "paymentId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 160,
+        "width": 219
+      },
+      "tableName": "payment",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "rentalId:java.lang.Integer",
+        "customer:Customer",
+        "inventory:Inventory",
+        "lastUpdate:java.sql.Date",
+        "rentalDate:java.sql.Date",
+        "returnDate:java.sql.Date",
+        "staff:Staff"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 160,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* rentalId\ncustomer\ninventory\nlastUpdate\nrentalDate\nreturnDate\nstaff\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nCustomer\nInventory\nData e Hora\nData e Hora\nData e Hora\nStaff\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,200)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Rental"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "rental_id",
+        "customer_id",
+        "inventory_id",
+        "last_update",
+        "rental_date",
+        "return_date",
+        "staff_id"
+      ],
+      "dbLengths": [
+        "",
+        5,
+        10,
+        "",
+        "",
+        "",
+        5
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        6,
+        6,
+        6,
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "rentalId",
+          "type": "java.lang.Integer",
+          "dbName": "rental_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Rental Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "customer",
+          "type": "Customer",
+          "dbName": "customer_id",
+          "dbLength": 5,
+          "foreignKeyName": "rental_customer_id_fkey",
+          "joins": "customer_id:customer_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Customer",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "inventory",
+          "type": "Inventory",
+          "dbName": "inventory_id",
+          "dbLength": 10,
+          "foreignKeyName": "rental_inventory_id_fkey",
+          "joins": "inventory_id:inventory_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Inventory",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "rentalDate",
+          "type": "java.sql.Date",
+          "dbName": "rental_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Rental Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "returnDate",
+          "type": "java.sql.Date",
+          "dbName": "return_date",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Return Date",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "staff",
+          "type": "Staff",
+          "dbName": "staff_id",
+          "dbLength": 5,
+          "foreignKeyName": "rental_staff_id_key",
+          "joins": "staff_id:staff_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Staff",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "rental_customer_id_fkey",
+        "rental_inventory_id_fkey",
+        "",
+        "",
+        "",
+        "rental_staff_id_key"
+      ],
+      "id": "00ec8f44-0edc-4d96-9b11-e7dd4210ca14",
+      "insertable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "customer_id:customer_id",
+        "inventory_id:inventory_id",
+        "",
+        "",
+        "",
+        "staff_id:staff_id"
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Rental Id",
+        "Customer",
+        "Inventory",
+        "Last Update",
+        "Rental Date",
+        "Return Date",
+        "Staff"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Rental",
+      "nullables": [
+        "rentalId",
+        "customer",
+        "inventory",
+        "lastUpdate",
+        "rentalDate",
+        "staff"
+      ],
+      "position": {
+        "x": 610.25,
+        "y": 940
+      },
+      "primaryKeys": [
+        "rentalId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 170,
+        "width": 216
+      },
+      "tableName": "rental",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "staffId:java.lang.Integer",
+        "active:java.lang.Boolean",
+        "address:Address",
+        "email:java.lang.String",
+        "firstName:java.lang.String",
+        "lastName:java.lang.String",
+        "lastUpdate:java.sql.Date",
+        "password:java.lang.String",
+        "picture:Image Upload (to Database)",
+        "storeId:java.lang.Short",
+        "username:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 240,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* staffId\nactive\naddress\nemail\nfirstName\nlastName\nlastUpdate\npassword\npicture\nstoreId\nusername\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 111,
+          "text": "Inteiro\nLógico\nAddress\nTexto\nTexto\nTexto\nData e Hora\nTexto\nImagem no Banco\nInteiro Curto\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,280)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Staff"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "staff_id",
+        "active",
+        "address_id",
+        "email",
+        "first_name",
+        "last_name",
+        "last_update",
+        "password",
+        "picture",
+        "store_id",
+        "username"
+      ],
+      "dbLengths": [
+        "",
+        "",
+        5,
+        50,
+        45,
+        45,
+        "",
+        40,
+        2147483647,
+        5,
+        16
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        6,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "staffId",
+          "type": "java.lang.Integer",
+          "dbName": "staff_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Staff Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "active",
+          "type": "java.lang.Boolean",
+          "dbName": "active",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Active",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "address",
+          "type": "Address",
+          "dbName": "address_id",
+          "dbLength": 5,
+          "foreignKeyName": "staff_address_id_fkey",
+          "joins": "address_id:address_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Address",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "email",
+          "type": "java.lang.String",
+          "dbName": "email",
+          "dbLength": 50,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Email",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "firstName",
+          "type": "java.lang.String",
+          "dbName": "first_name",
+          "dbLength": 45,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "First Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastName",
+          "type": "java.lang.String",
+          "dbName": "last_name",
+          "dbLength": 45,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Last Name",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "password",
+          "type": "java.lang.String",
+          "dbName": "password",
+          "dbLength": 40,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Password",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "picture",
+          "type": "Image Upload (to Database)",
+          "dbName": "picture",
+          "dbLength": 2147483647,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Picture",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": true
+        },
+        {
+          "name": "storeId",
+          "type": "java.lang.Short",
+          "dbName": "store_id",
+          "dbLength": 5,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Store Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "username",
+          "type": "java.lang.String",
+          "dbName": "username",
+          "dbLength": 16,
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Username",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "",
+        "staff_address_id_fkey",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "id": "0e7a7dff-496e-4327-85c4-f36a97a52bf0",
+      "insertable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "",
+        "address_id:address_id",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Staff Id",
+        "Active",
+        "Address",
+        "Email",
+        "First Name",
+        "Last Name",
+        "Last Update",
+        "Password",
+        "Picture",
+        "Store Id",
+        "Username"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Staff",
+      "nullables": [
+        "staffId",
+        "active",
+        "address",
+        "firstName",
+        "lastName",
+        "lastUpdate",
+        "storeId",
+        "username"
+      ],
+      "position": {
+        "x": 307,
+        "y": 680
+      },
+      "primaryKeys": [
+        "staffId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 210,
+        "width": 219
+      },
+      "tableName": "staff",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "storeId:java.lang.Integer",
+        "address:Address",
+        "lastUpdate:java.sql.Date",
+        "staff:Staff"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 100,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* storeId\naddress\nlastUpdate\nstaff\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 141,
+          "text": "Inteiro\nAddress\nData e Hora\nStaff\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,140)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "Store"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "dbFieldNames": [
+        "store_id",
+        "address_id",
+        "last_update",
+        "manager_staff_id"
+      ],
+      "dbLengths": [
+        "",
+        5,
+        "",
+        5
+      ],
+      "dbPrecisions": [
+        "",
+        "",
+        6,
+        ""
+      ],
+      "dbScales": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "fields": [
+        {
+          "name": "storeId",
+          "type": "java.lang.Integer",
+          "dbName": "store_id",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Store Id",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false,
+          "isPrimaryKey": true,
+          "pkType": "None",
+          "sequence": ""
+        },
+        {
+          "name": "address",
+          "type": "Address",
+          "dbName": "address_id",
+          "dbLength": 5,
+          "foreignKeyName": "store_address_id_fkey",
+          "joins": "address_id:address_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Address",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "lastUpdate",
+          "type": "java.sql.Date",
+          "dbName": "last_update",
+          "dbLength": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": 6,
+          "dbScale": 6,
+          "label": "Last Update",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        },
+        {
+          "name": "staff",
+          "type": "Staff",
+          "dbName": "manager_staff_id",
+          "dbLength": 5,
+          "foreignKeyName": "store_manager_staff_id_fkey",
+          "joins": "manager_staff_id:staff_id",
+          "isInsertable": true,
+          "isUpdatable": true,
+          "dbPrecision": "",
+          "dbScale": "",
+          "label": "Staff",
+          "mask": "",
+          "isUniqueKey": false,
+          "isNullable": false
+        }
+      ],
+      "foreignKeysName": [
+        "",
+        "store_address_id_fkey",
+        "",
+        "store_manager_staff_id_fkey"
+      ],
+      "id": "07d35487-4ded-4f2e-a9c8-151a93a80adf",
+      "insertable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "isRest": "true",
+      "joins": [
+        "",
+        "address_id:address_id",
+        "",
+        "manager_staff_id:staff_id"
+      ],
+      "keyTypes": [
+        "None",
+        "None",
+        "None",
+        "None"
+      ],
+      "labels": [
+        "Store Id",
+        "Address",
+        "Last Update",
+        "Staff"
+      ],
+      "methods": [],
+      "modelType": "Table",
+      "name": "Store",
+      "nullables": [
+        "storeId",
+        "address",
+        "lastUpdate",
+        "staff"
+      ],
+      "position": {
+        "x": 1046.5,
+        "y": 955
+      },
+      "primaryKeys": [
+        "storeId"
+      ],
+      "queries": [],
+      "requireds": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "sequences": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "size": {
+        "height": 140,
+        "width": 216
+      },
+      "tableName": "store",
+      "tableScheme": "public",
+      "type": "uml.Class",
+      "uniqueKeys": [],
+      "updatable": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "usePhysicalNames": "false",
+      "z": 2
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "017b92ac-56d6-455d-9b8a-90b9a3d929ad",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "address:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "d7913529-13a1-4a83-9cb8-d4823c5515eb"
+      },
+      "target": {
+        "id": "0e7a7dff-496e-4327-85c4-f36a97a52bf0"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "0e0bb732-8092-4ae8-8015-0900df519952",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "film:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "9abaeeeb-9f25-428e-be35-67a32481875c"
+      },
+      "target": {
+        "id": "6ed2439c-5a05-4f11-b9e0-bdab550e3ec2"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "1fe8d81f-587d-46b6-81b8-e4c75150822e",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "rental:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "00ec8f44-0edc-4d96-9b11-e7dd4210ca14"
+      },
+      "target": {
+        "id": "edd7f0ae-4c62-476e-a7b8-c4fac2e48d8f"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "24d40c23-9cac-4831-b756-d4d0503defdc",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "atores:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "240e23f9-3756-4fb6-a7b8-ac51af069a1f"
+      },
+      "target": {
+        "id": "df634cad-d8ca-40c8-8527-15b9b8ae17f7"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "3078c078-066e-4b82-b30f-394926d76d9d",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "category:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "60dd60c9-fc73-4c32-b8dc-eacbb0382dad"
+      },
+      "target": {
+        "id": "6ed2439c-5a05-4f11-b9e0-bdab550e3ec2"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "38a44cbe-8418-4309-8206-0f1c14ae1297",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "filmes:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "6e7dff47-ea91-4a72-ac84-93b383a85447"
+      },
+      "target": {
+        "id": "df634cad-d8ca-40c8-8527-15b9b8ae17f7"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "513ee546-bf21-4af7-93df-495827b81d2e",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "address:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "d7913529-13a1-4a83-9cb8-d4823c5515eb"
+      },
+      "target": {
+        "id": "76f7b271-6aca-4e54-a5ff-080c54130a50"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "55a3ae01-92a6-4bad-a78c-8207fb0a0b3f",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "address:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "d7913529-13a1-4a83-9cb8-d4823c5515eb"
+      },
+      "target": {
+        "id": "07d35487-4ded-4f2e-a9c8-151a93a80adf"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "5644c3eb-a0a9-4ecc-b25d-8cc52505fd39",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "film:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "9abaeeeb-9f25-428e-be35-67a32481875c"
+      },
+      "target": {
+        "id": "a0c23285-db01-4b23-ba46-13a22994b5bc"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "5b29faec-e0f2-48c0-a367-93f4b3744cc2",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "country:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "d7e92b66-d7ec-4e67-ad37-c92540c051e7"
+      },
+      "target": {
+        "id": "e43a2f1d-eced-4052-8fa3-70bea491eaa1"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "65a6957b-0a8a-4d9b-98dd-e1e3a3844018",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "actor:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "fe264913-13a1-4361-994e-5ae2f29b0adc"
+      },
+      "target": {
+        "id": "a0c23285-db01-4b23-ba46-13a22994b5bc"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "6a7227c7-ee9c-4aa7-b924-0df101c2722b",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "city:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "e43a2f1d-eced-4052-8fa3-70bea491eaa1"
+      },
+      "target": {
+        "id": "d7913529-13a1-4a83-9cb8-d4823c5515eb"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "6d867157-d9ea-410e-87e1-12647939d8f2",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "customer:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "76f7b271-6aca-4e54-a5ff-080c54130a50"
+      },
+      "target": {
+        "id": "edd7f0ae-4c62-476e-a7b8-c4fac2e48d8f"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "76cd6209-9d93-42e3-92ee-f3e2b54e45ab",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "staff:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "0e7a7dff-496e-4327-85c4-f36a97a52bf0"
+      },
+      "target": {
+        "id": "00ec8f44-0edc-4d96-9b11-e7dd4210ca14"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "995062f8-4645-4533-9491-b726e82b2848",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "staff:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "0e7a7dff-496e-4327-85c4-f36a97a52bf0"
+      },
+      "target": {
+        "id": "edd7f0ae-4c62-476e-a7b8-c4fac2e48d8f"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "b2fda44b-f632-489d-88d1-bec1466cad56",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "language:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "957cb3f7-03d5-4f66-a5ee-c20cc9896624"
+      },
+      "target": {
+        "id": "9abaeeeb-9f25-428e-be35-67a32481875c"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "b903d32a-252b-4cc7-8528-2e62d064e423",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "staff:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "0e7a7dff-496e-4327-85c4-f36a97a52bf0"
+      },
+      "target": {
+        "id": "07d35487-4ded-4f2e-a9c8-151a93a80adf"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "c30f754e-a31c-4fc8-ac59-1739639416f2",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "inventory:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "8d94a990-09f9-41dc-82b4-814ce4f44ba1"
+      },
+      "target": {
+        "id": "00ec8f44-0edc-4d96-9b11-e7dd4210ca14"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "c699e669-800e-4542-8350-9e59788a27ca",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "customer:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "76f7b271-6aca-4e54-a5ff-080c54130a50"
+      },
+      "target": {
+        "id": "00ec8f44-0edc-4d96-9b11-e7dd4210ca14"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    },
+    {
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "c981889c-016f-4a53-a916-0062a83d92b1",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "queries": [],
+      "relationFields": [
+        "film:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "9abaeeeb-9f25-428e-be35-67a32481875c"
+      },
+      "target": {
+        "id": "8d94a990-09f9-41dc-82b4-814ce4f44ba1"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": "4"
+    }
+  ],
+  "selectedGroup": "",
+  "groups": [
+    {
+      "name": "",
+      "id": "a84f593a-61f2-4fa5-864c-1b6e567910ae",
+      "cells": [
+        "df634cad-d8ca-40c8-8527-15b9b8ae17f7",
+        "957cb3f7-03d5-4f66-a5ee-c20cc9896624",
+        "60dd60c9-fc73-4c32-b8dc-eacbb0382dad",
+        "8d94a990-09f9-41dc-82b4-814ce4f44ba1",
+        "e43a2f1d-eced-4052-8fa3-70bea491eaa1",
+        "00ec8f44-0edc-4d96-9b11-e7dd4210ca14",
+        "76f7b271-6aca-4e54-a5ff-080c54130a50",
+        "a0c23285-db01-4b23-ba46-13a22994b5bc",
+        "fe264913-13a1-4361-994e-5ae2f29b0adc",
+        "6ed2439c-5a05-4f11-b9e0-bdab550e3ec2",
+        "07d35487-4ded-4f2e-a9c8-151a93a80adf",
+        "6e7dff47-ea91-4a72-ac84-93b383a85447",
+        "edd7f0ae-4c62-476e-a7b8-c4fac2e48d8f",
+        "0e7a7dff-496e-4327-85c4-f36a97a52bf0",
+        "d7913529-13a1-4a83-9cb8-d4823c5515eb",
+        "d7e92b66-d7ec-4e67-ad37-c92540c051e7",
+        "9abaeeeb-9f25-428e-be35-67a32481875c",
+        "240e23f9-3756-4fb6-a7b8-ac51af069a1f"
+      ],
+      "groupPositions": []
+    }
+  ]
+}
