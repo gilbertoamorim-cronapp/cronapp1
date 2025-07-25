@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context>
+    <Resource accessToUnderlyingConnectionAllowed="true" driverClassName="org.h2.Driver" logAbandoned="true" name="jdbc/main" password="root" profile="DEV" removeAbandoned="false" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:h2:file:~/8a2e13cf93d94d08847a0b84ed0d3dde;AUTO_SERVER=TRUE;MODE=LEGACY" username="root"/>
+    <Profile value="DEV"/>
+    <Profile value="PROD"/>
+</Context>
